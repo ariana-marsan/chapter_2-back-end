@@ -1,0 +1,48 @@
+
+###
+GET http://localhost:3001
+
+### register a user POST /AUTH/REGISTER
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+    "username": "pedro@gmail.com",
+    "password": "pepito123"
+}
+
+### login a user POST /AUTH/LOGIN
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "username": "pedro@gmail.com",
+    "password": "pepito123"
+}
+
+### get all todos GET /TODOS
+GET http://localhost:3001/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyOTE0ODMwLCJleHAiOjE3NDMwMDEyMzB9.LWla0qLXvxSkJtgKiLkUdnCQuTLs0mpSpgw-sFJQsmU
+
+### create a todo POST /TODOS
+POST http://localhost:3001/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyOTE0ODMwLCJleHAiOjE3NDMwMDEyMzB9.LWla0qLXvxSkJtgKiLkUdnCQuTLs0mpSpgw-sFJQsmU
+Content-Type: application/json
+
+{
+    "task": "Buy milk"
+}
+
+### update a todo PUT /TODOS/:ID
+PUT http://localhost:3001/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyOTE0ODMwLCJleHAiOjE3NDMwMDEyMzB9.LWla0qLXvxSkJtgKiLkUdnCQuTLs0mpSpgw-sFJQsmU
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
+### delete a todo PUT /TODOS/:ID
+DELETE http://localhost:3001/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQyOTE0ODMwLCJleHAiOjE3NDMwMDEyMzB9.LWla0qLXvxSkJtgKiLkUdnCQuTLs0mpSpgw-sFJQsmU
