@@ -1,5 +1,5 @@
 {
-  "name": "chapter_2-back-end",
+  "name": "chapter_3-back-end",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "full stack app, uses express, bcryptjs, JWT authentication, NodeJS backend and SQLite database ",
+  "description": "A dockerized full stack app, uses express, bcryptjs, JWT authentication, PostgreSQL backend, a Prisma ORM, and SQLite database",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "express": "^4.21.2",
